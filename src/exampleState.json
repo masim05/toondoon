@@ -1,0 +1,53 @@
+{
+  "new": {
+    "items": [
+      {
+        "id": 34,
+        "title": "1st todo",
+        "description": "Do the app"
+      },
+      {
+        "id": 35,
+        "title": "2nd todo",
+        "description": "Be happy"
+      }
+    ]
+  },
+  "inprogress": {
+    "items": [
+      {
+        "id": 31,
+        "title": "7th todo",
+        "description": "Clean the room"
+      }
+    ]
+  },
+  "done": {
+    "items": [
+      {
+        "id": 11,
+        "title": "11th todo",
+        "description": "AAA"
+      },
+      {
+        "id": 12,
+        "title": "12th todo",
+        "description": "BBB"
+      },
+      {
+        "id": 13,
+        "title": "13th todo",
+        "description": "CCC"
+      }
+    ]
+  },
+  "closed": {
+    "items": [
+      {
+        "id": 14,
+        "title": "14th todo",
+        "description": "DDD"
+      }
+    ]
+  }
+}
