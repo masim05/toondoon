@@ -6,11 +6,13 @@ class TodoList extends Component {
   render() {
     let items = [];
     this.props.items.forEach(i => {
-      items.push(<Todo column={this.props.column} item={i} key={i.id}/>)
+      items.push(<li key={i.id}><Todo column={this.props.column} item={i}/></li>)
     });
     return (
       <div className="TodoList">
-        {items}
+        <ul>
+          {items}
+        </ul>
         {(this.props.column === 'new') ? <CreateNewTodoButton /> : undefined}
       </div>
     );
