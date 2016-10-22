@@ -5,9 +5,9 @@ class Board extends Component {
   render() {
     return (
       <div className="Board">
-        <TodoList />
-        <TodoList />
-        <TodoList />
+        <TodoList column="new"/>
+        <TodoList column="inprogress"/>
+        <TodoList column="done"/>
       </div>
     );
   }
