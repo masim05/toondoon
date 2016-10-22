@@ -4,12 +4,13 @@ import CreateNewTodoButton from '../containers/CreateNewTodoButton'
 
 class TodoList extends Component {
   render() {
-
+    let items = [];
+    this.props.items.forEach(i => {
+      items.push(<Todo column={this.props.column} item={i} key={i.id}/>)
+    });
     return (
       <div className="TodoList">
-        <Todo column={this.props.column}/>
-        <Todo column={this.props.column}/>
-        <Todo column={this.props.column}/>
+        {items}
         {(this.props.column === 'new') ? <CreateNewTodoButton /> : undefined}
       </div>
     );
